@@ -44,13 +44,22 @@
         <link rel="stylesheet" href="assets-2/css/vendor/bootstrap.min.css">
 
 	</head>
+
+	<style>
+		@media (max-width: 768px) {
+		  .about-us-reversed {
+			flex-direction: column-reverse !important;
+		  }
+		}
+	  </style>
+	
 	<body class="body-wrapper home-one" data-scroll-animation="true">
 		<!-- Overlay -->
 		<div class="overlay"></div>
 
 		<!-- Top Header Start -->
 		<!-- <div class="srex-top-header d-none d-md-block">
-		<!-- Top Header End -->
+		Top Header End
 
 		<!-- Header Start -->
 			<header class="srex-header srex-header--home-one">
@@ -287,7 +296,7 @@
 					</ul>
 				</div>
 			</div>
-		</header>
+	     	</header>
 		<!-- Header End -->
 		
 		<!-- START SECTION TOP -->
@@ -344,7 +353,7 @@
 							</div>
 
 							<!-- 2nd -->
-							<div class="srex-about-us-two__left-content wow ud-fade-in-up" data-wow-delay="200ms">
+							<div class="srex-about-us-two__left-content wow ud-fade-in-up about-us-reversed" data-wow-delay="200ms">
 
 								<div class="srex-about-us-two__left-content__right wow ud-fade-in-up" data-wow-delay="200ms" style="flex: 0 0 110%;">
 									<p>Nullam vel nibh facilisis lectus fermentum ultrices quis non risus. Lore m ipsum dolor sit amet, consectetur adipiscing elit. In hac habit asse platea dictumst. Duis porta, quam ut finibus ultrices, lorem lacus Null m vel nibh facilisis lectus fermentum ultrices quis non risus</p>

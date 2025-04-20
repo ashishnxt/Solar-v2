@@ -389,44 +389,46 @@
       });
       $(document).ready(function () {
         var swiper = new Swiper(".swiper-feedback-solar", {
-          slidesPerView: 2,
-          spaceBetween: 24,
-          slidesPerGroup: 1,
-          loop: true,
-          autoplay: {
-            delay: 3000,
-          },
-          loopFillGroupWithBlank: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          breakpoints: {
-            1500: {
-              slidesPerView: 2,
+            slidesPerView: 1, // Only one slide shown at a time
+            spaceBetween: 24,  // Space between slides
+            slidesPerGroup: 1, // One slide per group
+            loop: true,        // Enable looping
+            autoplay: {
+                delay: 15000,  // Delay between slides (3 seconds)
             },
-            1199: {
-              slidesPerView: 2,
+            loopFillGroupWithBlank: true,  // Fill group with blank slides when looping
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,  // Make pagination clickable
             },
-            991: {
-              slidesPerView: 1,
+            navigation: {
+                nextEl: ".swiper-button-next",  // Next slide button
+                prevEl: ".swiper-button-prev",  // Previous slide button
             },
-            767: {
-              slidesPerView: 1,
+            breakpoints: {
+                // You can remove or adjust breakpoints, but we'll keep `slidesPerView: 1` for all
+                1500: {
+                    slidesPerView: 1,  // One slide for larger screens
+                },
+                1199: {
+                    slidesPerView: 1,  // One slide for medium screens
+                },
+                991: {
+                    slidesPerView: 1,  // One slide for smaller screens
+                },
+                767: {
+                    slidesPerView: 1,  // One slide for mobile screens
+                },
+                575: {
+                    slidesPerView: 1,  // One slide for mobile screens
+                },
+                0: {
+                    slidesPerView: 1,  // One slide for small devices
+                }
             },
-            575: {
-              slidesPerView: 1,
-            },
-            0: {
-              slidesPerView: 1,
-            }
-          },
         });
-      });
+    });
+    
       $(document).ready(function () {
         var swiper = new Swiper(".mySwiper-h-2-c", {
           slidesPerView: 3.8,
