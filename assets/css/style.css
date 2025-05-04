@@ -2458,8 +2458,7 @@ input:focus {
 ------------------------------------*/
 .srex-features {
   background: url("../../assets/images/features-bg-bak.png") no-repeat;
-  /* background: #4aab3d ; */
-  /* background: linear-gradient(169deg,rgba(0, 123, 255, 1) 0%, rgba(255, 255, 255, 1) 100%); */
+  
   padding: 50px 0 430px 0;
   background-size: cover;
 }
